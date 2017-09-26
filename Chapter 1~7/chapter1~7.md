@@ -83,5 +83,5 @@ animations: {
 - 제약조건값을 바꾸는것만이 아닌 레이아웃자체를 업데이트 할 기회를 주기 위해 layoutIfNeeded를 호출해줘야함.
 - 제약조건의 식별자로 그부분에 그대로 추가가 가능??
 - 제약조건에 속성들을 잘 알아야 할듯.
-
+<img src="https://github.com/ParkGwangBeom/AnimationStudy/blob/master/Chapter%201%7E7/Resource/Animation_1.png"/>
 
