@@ -29,6 +29,7 @@ options: .transitionFlipFromTop, completion: nil)
 
 ### Chapter4. View Animations in Practice
 **이장은 연습임… 한번 꼭 해보는게 좋은듯… 큐브랑 여러 애니메이션 구현하는 거 나옴.**
+- 이동, 회전, 스케일 변경에서 행렬을 잘 알아야함…
 
 ### Chatper5. Keyframe animations
 - 기본 애니메이션 api의 경우 두개의 애니메이션을 묶는데는 효과적이지만 여러개 단위로 묶어야 할 경우 어려움이 있음. 이를 해결해주는게 KeyframeAnimation임.
@@ -79,5 +80,8 @@ animations: {
 
 ### Chapter7. Animating Constraints
 - 오토레이아웃이 제대로 작동하려면 frame, center같은 속성으로 애니메이션을 만들 수 없음
--
+- 제약조건값을 바꾸는것만이 아닌 레이아웃자체를 업데이트 할 기회를 주기 위해 layoutIfNeeded를 호출해줘야함.
+- 제약조건의 식별자로 그부분에 그대로 추가가 가능??
+- 제약조건에 속성들을 잘 알아야 할듯.
+
 
