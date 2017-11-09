@@ -8,7 +8,8 @@
 ```
 delayFactor(0.33) * remainingDuration(=duration 0.33) = delay of 0.11 seconds
 ```
-// 이미지
+
+<img src="https://github.com/ParkGwangBeom/AnimationStudy/blob/master/Animator/Resource/ex1.png"/>
 
 - 완료를 알고 싶을 경우 addCompletion 블럭을 추가해주면됨.
 - 이는 또한 addAnimations와 같이 여러개를 추가할수 있음. 이는 차례대로 하나씩 실행이 됨.
@@ -28,12 +29,14 @@ delayFactor(0.33) * remainingDuration(=duration 0.33) = delay of 0.11 seconds
 - UIView.animation…은 원하는 최종상태가 정의 되면 렌더링을 위해 애니메이션이 전송되고 컨트롤할수 없게됨.
 - 하지만 UIViewPropertyAnimator는 시작, 중지, 속도변경등의 상호 작용을 할수 있음.
 - UIViewPropertyAnimator는 애니메이션의 현재 상태에 대한 정보를 제공함.
-//. 이미지
+
+<img src="https://github.com/ParkGwangBeom/AnimationStudy/blob/master/Animator/Resource/ex2.png"/>
 
 - state
     - inactive는 비활성화 상태를 얘기하며 animator가 생성만되고 아무것도 실행하지 않은 상태를 말함. 이는 isRunning을 false로 설정하는 것과는 별개임. isRunning의 경우 실제로 재생되는 애니메이션에만 관련이 있음.
 
-// 이미지
+<img src="https://github.com/ParkGwangBeom/AnimationStudy/blob/master/Animator/Resource/ex3.png"/>
+
 - 애니메이션이 자연스럽게 완료가 되면 상태가 다시 inactive 상태로 변경됨
 
 - 이미지와 같이 비활성화 상태에서 stopped상태로 변경이 불가능함.
@@ -55,7 +58,7 @@ pauseAnimation: startAnimation을 부를수 있음. 그대로 포즈하는것일
 
 - iOS 10부터 UIViewControllerAnimatedTransitioning에는 interruptibleAnimator(:)를 제공함. 이는 전환애니메이션에 사용할 중단 가능한 애니메이터를 제공할 수 있도록 도와줌
 
-// 이미지
+<img src="https://github.com/ParkGwangBeom/AnimationStudy/blob/master/Animator/Resource/ex4.png"/>
 
 - 대화형의 경우 interruptibleAnimator를 사용하여 이용하게됨.
 - wantsInteractiveStart 속성을 통해서 대화형 비대화형 설정이 가능함
