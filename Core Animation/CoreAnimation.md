@@ -51,8 +51,10 @@
 - colors : 변할 색상들
 - locations : 변경될 지점
 
-// 이미지
-// 이미지
+<img src="https://github.com/ParkGwangBeom/AnimationStudy/blob/master/Core%20Animation/Resource/gra1.png"/>
+
+<img src="https://github.com/ParkGwangBeom/AnimationStudy/blob/master/Core%20Animation/Resource/gra2.png"/>
+
 
 ## Stroke and path Animations
 - strokeEnd : 선이 먼저 시작되 가는부분

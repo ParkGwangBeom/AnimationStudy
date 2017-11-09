@@ -3,9 +3,10 @@
 ## 17장 뷰컨트롤러 트랜지션
 
 **전환 방식**
+
 ViewController에서 Transition delegate 메소드의 구현 여부를 통해서 animation관련 객체 즉 UIViewControllerAnimatedTransitioning값을 받고 이를 통해서 전환 효과를 구현함
 
-// 이미지
+<img src="https://github.com/ParkGwangBeom/AnimationStudy/blob/master/ViewControllerTransition/Resource/trans1.png"/>
 
 UIKit은 animationController (forPresented : presenting : source :)를 호출하여 UIViewControllerAnimatedTransitioning이 반환되는지 확인함
 이 반환값이 nil이면 기본 제공 전환을 사용
@@ -57,11 +58,8 @@ UIViewControllerInteractiveTransitioning
 UIPercentDrivenInteractiveTransition는 클래스임. 이는 UIViewControllerInteractiveTransitioning를 따름.
 이는 좀 더 Interactive 전환 효과에 대해 좀 더 편하게 관리할수 있도록 해줌
 
-// 이미지
+<img src="https://github.com/ParkGwangBeom/AnimationStudy/blob/master/ViewControllerTransition/Resource/trans2.png"/>
 
 사용자가 애매한상태에서 전환효과를 종료했을 때가 있음. 이때 전환에 문제가 생길수 있음.  UIPercentDrivenInteractiveTransition는 그를 해결해줌. 이를 통해서 전환을 되돌리거나 완료할수 있음. cancel()과 finish()
 
-// 이미지
-
-이를 통해서 페이스북처럼 팬 제스처를 통해서 dismiss시키는 것을 구현이 가능할듯.
-http://imnotyourson.com/draggable-view-controller-interactive-view-controller/
+<img src="https://github.com/ParkGwangBeom/AnimationStudy/blob/master/ViewControllerTransition/Resource/trans3.png"/>
